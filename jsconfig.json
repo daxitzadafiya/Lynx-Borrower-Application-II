@@ -1,0 +1,11 @@
+{
+  "files": [],
+  "references": [],
+  "include": [
+    "src/**/*.js",
+    "src/**/*.vue",
+    "tests/**/*.js",
+    "src/scss/*.scss"
+  ],
+  "exclude": ["node_modules"]
+}

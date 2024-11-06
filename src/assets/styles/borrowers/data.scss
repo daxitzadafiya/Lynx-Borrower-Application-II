@@ -1,0 +1,159 @@
+.borrowers-data {
+    padding-top: 30px;
+    height: 100%;
+}
+
+.borrowers {
+    &__card-title {
+        padding: 0;
+    }
+    &__title {
+        padding: 25px 0 25px 45px;
+        word-break: keep-all;
+    }
+    &__subtitle {
+        font-size: 16px;
+        word-break: keep-all;
+        padding-left: 10px;
+    }
+    &__button {
+        width: 152px;
+        margin-left: 44px;
+        padding: 24px 0;
+    }
+    &_mobile-button {
+        display: none;
+    }
+}
+
+.text-block {
+    margin: 30px 0;
+    padding-left: 35px;
+    .row {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.picker-menu {
+    min-width: 270px !important;
+}
+
+.picker {
+    &__error {
+        display: flex;
+        font-weight: 700;
+        color: $error;
+        &--text {
+            align-self: flex-end;
+        }
+    }
+}
+
+.status-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 22px;
+    cursor: pointer;
+    position: relative;
+    &__title {
+        font-size: 18px;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+    &__icon {
+        position: absolute;
+        z-index: 2;
+        top: -10px;
+        right: -10px;
+        color: $tile-selected-outline-color !important;
+        background: white;
+    }
+    &_selected {
+        border: 2px solid $tile-selected-outline-color;
+        background-color: white;
+        .option-card__image {
+            stroke: $tile-selected-outline-color;
+            fill: $tile-selected-outline-color;
+        }
+    }
+}
+
+.margin-10 {
+    margin: 10px 0 0; 
+}
+
+.drop-icon {
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .borrowers {
+        &__title {
+            max-width: 650px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .borrowers {
+        &__title {
+            padding-left: 35px;
+        }
+        &__subtitle {
+            padding-left: 0;
+        }
+    }
+    .text-block {
+        &__col {
+            padding-left: 0;
+        }
+        &_left-pad-12 {
+            padding-left: 12px;
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    .borrowers-data {
+        margin-bottom: 30px;
+    }
+    .text-block {
+        margin-bottom: 10px;
+        &__col {
+            width: 100%;
+        }
+    }
+    .borrowers {
+        &__title {
+            font-size: 18px;
+            padding: 15px;
+            line-height: 22px;
+        }
+        &__button {
+            margin: 0 auto;
+            width: 200px;
+        }
+        &_mobile-button {
+            display: block;
+        }
+        &_desktop-button {
+            display: none;
+        }
+    }
+}
+
+
+@media (max-width: 450px) {
+    .text-block {
+        padding-left: 15px;
+        &__row {
+            margin: 0;
+        }
+    }
+}

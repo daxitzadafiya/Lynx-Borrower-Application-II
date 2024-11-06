@@ -1,0 +1,187 @@
+.toolbar-item {
+  height: 100%;
+  padding: 0 0 0 10px;
+  min-width: 125px;
+  position: relative;
+  color: $header-text-color;
+  &::before {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    content: '';
+    height: 35px;
+    width: 1px;
+    background-color: $primary;
+  }
+}
+
+.logo-col {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.list {
+  padding: 0 12px;
+  max-height: 100%;
+  display: flex;
+  .scrolled-row {
+    max-height: 100%;
+    max-width: none;
+  }
+}
+
+.account {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  &__text {
+    font-size: 11px;
+    opacity: 0.9;
+    text-transform: uppercase;
+  }
+  &__logo {
+    margin: 0 5px 0 7px;
+    padding-bottom: 7px;
+  }
+}
+
+.search-field {
+  max-width: 120px;
+  margin-top: 15px;
+}
+
+.row > span > .v-btn--round {
+  border-radius: 0;
+}
+
+.bordered {
+  border-right: 1px solid $border-light-gray;
+}
+
+.arrow {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 9px;
+  cursor: pointer;
+  transition: all 0.3s;
+  z-index: 10;
+  padding: 12px 0 12px 8px;
+  &:focus {
+    outline: none;
+  }
+  img {
+    outline: none;
+    transition: all 0.2s;
+  }
+}
+
+.reversed {
+  transform: rotate(180deg);
+}
+
+.scrolled-col {
+  transform: translateX(0);
+  transition: all 0.3s;
+  min-height: 43px;
+}
+
+.account-block {
+  position: relative;
+}
+
+.scrolled-row {
+  padding-left: 30px;
+  max-width: 780px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+  .address-col {
+    min-width: 210px;
+    padding-left: 40px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.col_translated {
+  transform: translateX(-330px);
+}
+
+@media (max-width: 1380px) {
+  .list > .scrolled-row {
+    width: 507px;
+    flex-wrap: nowrap;
+    justify-content: flex-start !important;
+    margin-left: 50px;
+    padding-left: 10px;
+  }
+  .arrow {
+    display: block;
+  }
+  .account {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .account-block {
+    min-width: 0;
+  }
+  .search-field {
+    position: absolute;
+    right: 200px;
+    background-color: $primary;
+    z-index: 5;
+  }
+}
+
+@media (max-width: 1098px) {
+  .list > .scrolled-row {
+    width: 407px;
+    margin-left: 70px;
+  }
+  .search-field {
+    right: 120px;
+  }
+  .logo-col {
+    width: 130px;
+  }
+  .main-logo {
+    max-width: 110px;
+    max-height: 48px;
+  }
+  .list > .scrolled-row {
+    margin-left: 20px;
+  }
+  .account {
+    margin-left: 0;
+    &__text {
+      display: none;
+    }
+  }
+  .account-block > .search-field {
+    width: 120px;
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .search-field {
+    display: none;
+  }
+}
+
+@media (max-width: 780px) {
+  .pushs-logo {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.header-account-button {
+  display: flex;
+  align-items: center;
+}
+

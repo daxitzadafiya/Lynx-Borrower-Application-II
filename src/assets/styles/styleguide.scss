@@ -1,0 +1,13 @@
+@media (min-width: 1280px) {
+  .v-container {
+    max-width: 1440px !important;
+  }
+}
+
+#app {
+  height: 100vh;
+}
+
+.primary-text {
+  color: $primary;
+}
