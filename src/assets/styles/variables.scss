@@ -1,0 +1,108 @@
+$background-image-size: 50%;
+$max-page-width: 1200px;
+$page-padding: 30px;
+$tablet-page-padding: 20px;
+$mobile-page-padding: 10px;
+
+$container-border-radius: 7px;
+$container-border: 1px solid #E4E2E0;
+
+$content-padding-x: 30px;
+$content-padding-y: 30px;
+
+$content-padding-tablet-x: 20px;
+$content-padding-tablet-y: 30px;
+
+$content-padding-mobile-x: 10px;
+$content-padding-mobile-y: 30px;
+
+$summary-item-padding-y: 5px;
+
+$input-padding-mobile-x: 10px;
+$input-padding-mobile-y: 20px;
+
+$tablet-width: 768px;
+$mobile-width: 475px;
+$sidebar-tablet-breakpoint: 900px;
+$mobile-height: 720px;
+
+$input-padding-x: 10px;
+$input-padding-y: 10px;
+
+// Neighborhood Variables 
+$width : 660px;
+$font-weight : 500;
+$heading: 36px;
+
+
+// Side bar variables start
+
+// circle variables
+$circle-width: 40px;
+$circle-height: 40px;
+$circle-border: 1px;
+
+// side bar line variables 
+$long-line-height: 150px;
+$to-top: 40px;
+$to-left: 18px;
+$line-width: 1px;
+$short-line-height: 55px;
+
+// svg variables
+$svg-width: 20px;
+$svg-height: 20px;
+$mobile-svg-width: 16px;
+$mobile-svg-height: 16px;
+
+// title variables
+$title-size: 18px;
+$title-font-weight: 600;
+$mobile-title-size: 16px;
+
+// Side bar variables end
+
+// Animated sidebar variables start
+$sm-width: 420px;
+$xsm-width: 375px;
+$xxsm-width: 320px; 
+
+// step variables
+$step-width: 62px;
+$step-height: 62px;
+$step-border: 1px;
+
+$step-tablet-width: 35px;
+$step-tablet-height: 35px;
+
+$step-mobile-width: 30px;
+$step-mobile-height: 30px;
+
+$step-xs-width: 30px;
+$step-xs-height: 30px;
+
+// Animated sidebar variables end
+
+// Summary Card header Variables
+$header-title-size: 15px;
+$header-icon-height: 16px;
+$header-icon-width: 16px;
+$header-padding: 12px 16px;
+$action-box-height: 30px;
+$action-box-width: 30px;
+$action-icon-height: 20px;
+$action-icon-width: 20px;
+
+
+// New breakpoint
+
+$lg-mobile-width: 600px;
+$desktop-width: 1024px;
+$sm-tablet-width: 760px;
+$xl-mobile-width: 675px;
+$md-tablet-width: 960px;
+$lg-tablet-width: 991px;
+$lg-desktop-width: 1120px;
+$xl-desktop-width: 1280px;
+$xxl-desktop-width: 1400px;
+// New breakpoint End

@@ -1,0 +1,25 @@
+.item {
+    &__label {
+        font-size: 11px;
+    }
+    &__icon, &__address-icon {
+        position: relative;
+        top: 2px;
+        left: 5px;
+    }
+    &__address-icon {
+        left: -5px;
+        width: 16px;
+        height: 13px;
+    }
+    &__data {
+        font-size: 13px;
+        margin-bottom: 0;
+        font-weight: 500;
+    }
+    &__address {
+        margin-bottom: 0;
+        font-size: 13px;
+        font-weight: 500;
+    }
+}

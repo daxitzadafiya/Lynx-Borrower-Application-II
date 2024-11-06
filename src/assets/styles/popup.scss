@@ -1,0 +1,90 @@
+
+
+.popup {
+    display: flex;
+    flex-direction: column;
+    width: 704px;
+    overflow: auto;
+    background-color: $popup-bg;
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px 10px 30px;
+        position: relative;
+    }
+    &__close-wrapper {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    &__title-text{
+        display: inline-block;
+        max-width: 80%;
+        white-space: break-spaces !important;
+    }
+    &__main {
+        padding: 30px;
+    }
+    &__row {
+        justify-content: center;
+    }
+    &__buttons {
+        width: 100%;
+        padding: 24px 0;
+        display: flex;
+        justify-content: center;
+    }
+    &__button {
+        width: 100%;
+        padding: 24px 0;
+    }
+    &_desktop-button {
+        margin: 0 auto;
+        width: 152px;
+    }
+    &_mobile-button {
+        margin: 0 auto;
+        width: 200px;
+        display: none;
+    }
+
+    .v-card__text {
+        overflow: auto;
+        min-height: 79px;
+    }
+}
+
+
+@media (max-width: 760px) {
+    .popup {
+        max-width: 90%;
+        width: auto;
+    }
+}
+
+@media (max-width: 450px) {
+    .popup {
+        &__title {
+            padding: 10px 10px 10px 15px;
+        }
+        &__title-text {
+            display: inline-block;
+            max-width: 80%;
+            white-space: break-spaces !important;
+        }
+        &__main {
+            padding: 30px 15px;
+        }
+        &_padding-0-col {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        &_desktop-button {
+            display: none;
+        }
+        &_mobile-button {
+            display: block;
+        }
+    }
+}

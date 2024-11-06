@@ -1,0 +1,221 @@
+// Software Lynx
+@function color($color-name) {
+  @return var(--lynx-#{$color-name});
+}
+
+$primary: color(primary);
+$primary-light-1: color(primary-light-1);
+$primary-dark-1: color(primary-dark-1);
+$nautical: color(nautical);
+$border-light-gray: color(border-light-gray);
+$secondary: color(secondary);
+$menu-gray: color(menu-gray);
+$text-black: color(text-black);
+$process-green: color(process-green);
+$blue-lighten-4: color(blue-lighten-4);
+$main-back: color(main-back);
+$grey-light: color(grey-light);
+$orange: color(orange);
+$blue-grey: color(blue-grey);
+$light-gray: color(light-gray);
+$icon-gray: color(con-gray);
+$error: color(error);
+
+$header-back-color: $primary;
+$mobile-header-bottom-back-color: #b24242;
+$left-nav-selected-text-color: #000000;
+$left-nav-unselected-text-color: #000000;
+$left-nav-back-color: #e0e7f4;
+$header-label-text-color: #ffbf00;
+$header-text-color: #ffffffda;
+$mobile-menu-text-color: #fff;
+$secondary-text-color: #504f4f;
+$button-back-color: #023da7;
+$unselected-button-back-color: #fff;
+$button-text-color: #fff;
+$unselected-button-text-color: $primary;
+$unselected-button-border-color: $primary;
+$table-header-text-color: #a70202;
+$table-data-text-color: #504f4f;
+$table-header-back-color: #f4e0e0;
+$table-row-color: #ffffff;
+$table-odd-row-color: #fff;
+
+$page-header-text-color: #023da7;
+$tile-outline-color: #a5aebb;
+$tile-selected-outline-color: #3d3eb3;
+$add-new-text-color: #5dcc9b;
+$button-false-back-color: white;
+$button-true-back-color: #023da7;
+$tile-image-color: $tile-outline-color;
+$tile-image-selected-color: $tile-selected-outline-color;
+$tile-label-text-color: $tile-outline-color;
+$tile-label-selected-text-color: $tile-selected-outline-color;
+
+$progress-highlight-color: #5dcc9b;
+$progress-color: #023da7;
+$dialog-header-back-color: #a70202;
+$dialog-header-text-color: #fff;
+
+$left-nav-primary-text-color: #023da7;
+$left-nav-secondary-text-color: #000000;
+
+$slider-color-1: #000000;
+$slider-color-2: #023da7;
+
+$icon-color: #a70202;
+$icon-inactive-color: #b7b4b2;
+$sidebar-active-item-bg-color: #fff;
+$sidebar-secondary-text-color: $icon-inactive-color;
+
+$input-label-color: #949494;
+$input-label-active-color: #000;
+$input-underline-color: #949494;
+$input-underline-active-color: #000;
+
+$summarycard-header-bg-color: #e0e7f4;
+$summarycard-secondary-button-bg-color: $sidebar-active-item-bg-color;
+$summarycard-secondary-button-text-color: $icon-color;
+$summarycard-primary-button-bg-color: $icon-color;
+$summarycard-primary-button-text-color: $sidebar-active-item-bg-color;
+$summarycard-title-text-color: #424248;
+$summarycard-input-border-color: #e5e6e6;
+$summarycard-mobile-icon-bg-color: #fff;
+$slider-bg-color: #f3f5fc;
+$cross-button-color: #596576;
+$notify-bg-color: #060b14;
+$summary-table-even-row-color: #f9fbfd;
+$summary-table-padded-text-color: #83839a;
+$list-item-bg: #f5f8fb;
+
+$popup-bg: #f5f8fb;
+$content-headr-bg: #f4e0e0;
+$white-stroke: #e0e0e0;
+$gray1: #f9f9f9;
+$gray2: #4f4f4f;
+$gray3: #828282;
+$gray4: #e4e2e0;
+$lightBlue2: #f9fbfd;
+$addItemColor: #38c976;
+
+// Neighborhood Colors Variables
+$window:#D1E3FF;
+$object1:#1A2E35;
+$object2:#FFFFFF;
+$object3:#A8AFBB;
+$door:#F28B02;
+$clouds:#2B2B2A;
+
+// Colors
+$primary: #a70202;
+$orange: #FF7426;
+$secondary: #504f4f;
+$white: #fff;
+$red: #FF0000;
+$white2: #f5f5f5;
+$black: #000000de;
+$container-bg: #f5f8fb;
+$content-black: #424248;
+$light-blue: #e0e7f4;
+$orangeV2: #FF7426;
+$secondaryV2: #969696;
+$light-purpleV2: #5240B500;
+$dark-blueV2: #241C4F;
+$whiteV2: #fff;
+// Start Borrowers color variables
+$background-extra-light: #F4F3F2;
+$background-light: #E4E2E0;
+$background-white: #E4E2E0;
+$t-shirt: #F2A53D;
+$shadow: #404040;
+$pants-primary: #595959;
+$pants-secondary: #404040;
+$shoes: #171717;
+$hair: #171717;
+$belt-secondary: #404040;
+$face-details: #171717;
+$object-tertiary: #404040;
+$nose: #FEB084;
+
+// Illustration Start Page Color Variables
+$skinTone: #FECCAF;
+$faceDetails: #171717;
+
+// UnUsed color Variables
+$t-shirt2: #7269A3;
+$belt-primary: #171717;
+
+// Sidebar Plants Image Color Variables
+$object-primary: #241C4F;
+$object-secondary: #CAC5E8;
+$object-tertiary: #404040;
+$object-fourth: #F2A53D;
+$background-light: #E4E2E0;
+$background-extra-light: #F4F3F2;
+$background-white: #FDFDFD;
+$plants: #7269A3;
+
+// Co-borrowers Image Color Variables
+$skin: #FEC3BD;
+$object6: #4F4F4F;
+$nose2: #F98A7E;
+$girl-t-shirt: #F8C633;
+$t-shirt3: $primary;
+$bag: #F8C633;
+$hair2: #333333;
+$face-details2: #333333;
+$shoes2: #333333;
+$pant2: #333333;
+$belt: #333333;
+$bag-shadow: #333333;
+$collar: #333333; 
+
+// Review Image Color Variables
+$report-check-list: $primary;
+$report-check-list-secondary: #333333;
+$pencil: $primary;
+$pencil-secondary: #333333;
+$shadow2: #333333;
+$collar2: $primary;
+$t-shirt4: #F8C633;
+
+// Summary Card header Variables
+$action-primary-icon-color: #FF7426;
+$action-secondary-icon-color: #ffffff;
+$table-header-bg :#f4e0e0;
+$action-primary-bg-color: #FF7426;
+$action-secondary-bg-color: #fff;
+// Summary Card header Variables End
+
+// Loan and Property Start Page Variables
+$bench-color : #E0E7F4;
+$arrow-color : #B7B4B2;
+$person-shadow :#F5F8FB; 
+$screen-object : #F9F9F9;
+// Loan and Property Start Page Variables End
+
+// Credits Start Page Variables
+$socks : #B7B4B2;
+// Credits Start Page Variables End
+
+$close-icon-color: #0000008a;
+
+// Summary page variables
+$summary-table-even-row-colorV2: #f6f5fb;
+
+// Employment and income module Summary page variables
+$summary-close-icon-color: #f55a4e;
+
+// Rates offers pages variables
+$shoesLace: #171717;
+$foldedPent: #404040;
+$dark-grayV2: #212529;
+$primaryV2: #613BE4;
+$light-grayV2: #E3E2E1;
+$dark-purpleV3: #CBC3F4;
+
+// Header title color
+$header-title-color: #241C4F;
+
+// primary input control color
+$primary-input-control: #023da7;

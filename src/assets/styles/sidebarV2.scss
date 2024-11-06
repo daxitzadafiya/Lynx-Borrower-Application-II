@@ -1,0 +1,263 @@
+@import "./variables.scss";
+
+.sidebar {
+    max-width: 292px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 88px);
+    box-sizing: border-box;
+    margin-top: 88px;
+    &__name {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 40px;
+        margin-top: 10px;
+    }
+    &__text {
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    &__image {
+        position: fixed;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: end;
+    }
+    .v-navigation-drawer {
+        transform: translateX(0%) !important;
+        background-color: $list-item-bg;
+    }
+    .v-navigation-drawer--close {
+        visibility: visible;
+    }
+    &_hosted {
+        margin-top: 0;
+        height: 100%;
+    }
+    &-item-circle_active{
+        border: $circle-border solid $primaryV2 !important;
+        background: none !important;
+    }
+    &-item-circle_passed{
+        background-color: $primaryV2 !important;
+    }
+    &-list-item_active{
+        color: $primaryV2 !important;
+    }
+    &-icon-circle{
+        background: $light-grayV2;
+    }
+    &-list-item_passed{
+        color: $sidebar-active-item-bg-color !important;
+    }
+    &-nav-passed-color{
+        color: $dark-grayV2 !important;
+    }
+    &-icon-circle{
+        width: $circle-width;
+        height: $circle-height;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-progress-count{
+        font-size: 18px;
+        font-weight: 600;
+        color: $primaryV2;
+        @media (max-width: $sidebar-tablet-breakpoint) {
+            font-size: 16px;
+        }
+    }
+}
+.isExpanded.navDrawer .item__text {
+    display: block !important;
+}
+.isExpanded.navDrawer {
+	.sidebar__bottom-image {
+		scale: 1.2;
+	}
+}
+.navDrawer {
+	.sidebar__bottom-image {
+		scale: 1;
+		@media (max-width: $sidebar-tablet-breakpoint) { scale: 4.9; }
+	}
+}
+.item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    &__circle {
+        margin-right: 18px;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            top: $to-top;
+            left: $to-left;
+            width: $line-width;
+            height: $short-line-height;
+            background-color: $secondaryV2 !important;
+        }
+    }
+    &__text{
+        display: block;
+        @media (max-width: $sidebar-tablet-breakpoint) {
+            display: none;
+        }
+    }
+    &__title {
+        cursor: pointer;
+        color: $secondaryV2;
+        font-size: $title-size;
+        display: flex;
+        align-items: center;
+        font-weight: $title-font-weight;
+        margin-top: 10px;
+        @media (max-width: $sidebar-tablet-breakpoint) {
+            font-size: $mobile-title-size;
+          }
+        // &:hover {
+        //     color: $text-black;
+        // }
+    }
+    &__name {
+        font-size: 14px;
+        color: $menu-gray;
+        margin: 5px 0;
+        color: $dark-grayV2;
+        &:hover {
+            color: $dark-grayV2;
+        }
+        &:first-child {
+            margin-top: 10px;
+        }
+    }
+    &__button {
+        margin-top: 10px;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 14px;
+        color: $orangeV2;
+    }
+    &__link {
+        text-decoration: none;
+    }
+    &_active-name {
+        font-weight: 500;
+    }
+    &_active {
+        &::after {
+            background-color: $secondaryV2;
+            top: 40px;
+            width: 1px;
+        }
+    }
+    &_no-line {
+        &::after {
+            width: 0;
+            height: 0;
+            display: none;
+        }
+    }
+    &_passed {
+        &::after {
+            background-color: $primaryV2 !important;
+            height: 32px;
+        }
+    }
+    &_long-line {
+        &::after {
+            height: $long-line-height;
+        }
+    }
+    &__bulletins{
+        width: 10px;
+        height: 10px;
+        background: $secondaryV2;
+        border-radius: 50%;
+    }
+    &__active-bulletins{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: $dark-grayV2;
+    }
+    &-content{
+        padding: 0px 10px 32px 3px;
+    }
+}
+
+.active {
+    font-weight: 600;
+    font-size: 18px;
+    @media (max-width: $sidebar-tablet-breakpoint) {
+        font-size: 16px;
+      }
+}
+.side-nav-selected-color{
+    color: $primaryV2 !important;
+}
+@media (max-width: $tablet-width) {
+    .sidebar {
+        position: fixed;
+        left: 0;
+        height: calc(100dvh - 76px) !important;
+        top: 76px !important;
+        margin-top: 76px !important;
+    }
+}
+
+.listItems .sidebar-list:last-child{
+    // display: none !important;
+}
+.align-items-center{
+    align-items: center;
+}
+.listItemIcon{
+    color: $secondaryV2;
+}
+.progress{
+    .tabletIcon{
+        border: none !important;
+        background-color: transparent !important;
+        width: $svg-width;
+        height: $svg-height;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        @media (max-width: $sidebar-tablet-breakpoint) {
+            width: $mobile-svg-width;
+            height: $mobile-svg-height;
+        }
+        svg{
+            max-width: $svg-width;
+            max-height: $svg-height;
+            margin: 0px;
+            color: $secondaryV2;
+            @media (max-width: $sidebar-tablet-breakpoint) {
+                max-width: $mobile-svg-width;
+                max-height: $mobile-svg-height;
+            }
+        }
+    }
+}
+.sidebarExpandBtn{
+    padding-bottom: 80px !important;
+}
+
+.left-nav-primary-text {
+    color: $dark-grayV2 !important;
+}
